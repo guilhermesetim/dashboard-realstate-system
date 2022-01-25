@@ -1,39 +1,18 @@
-import BasicTabs from "./components/nav-tab";
-import PersistentDrawerLeft from "./components/nav-aside";
+import BasicTabs from "./nav-tab";
+import PersistentDrawerLeft from "./nav-aside";
+import StickyHeadTable from './list-house';
 
 
-function GlobalStyle(){
-  return (
-    <style global jsx>{`
 
-    * {
-    margin: 0;
-	  padding: 0;
-	  border: 0;
-    box-sizing: border-box;
-    list-style: none;
-	  font-size: 100%;
-	  text-decoration: none;
-    }
-
-    body {
-      background-color: #EEEEEE;
-    }
-
-    a {color: inherit;}  
-    `}
-    </style>
-  )
-}
 
 export default function HomePage() {
   return (
   
   <>
-    <GlobalStyle/>
+    
     {PersistentDrawerLeft()}
-    {BasicTabs()}
-
+    {/*BasicTabs()*/}
+    {StickyHeadTable()}
 
     
     
