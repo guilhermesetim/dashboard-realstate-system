@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/local/bin/yarn add @mui/icons-material/Menu
+  /usr/bin/node /usr/local/bin/yarn add @mui/lab/AdapterDateFns
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@mui%2ficons-material/Menu: Request "https://registry.yarnpkg.com/@mui%2ficons-material/Menu" returned a 405
+  Error: https://registry.yarnpkg.com/@mui%2flab/AdapterDateFns: Request "https://registry.yarnpkg.com/@mui%2flab/AdapterDateFns" returned a 405
       at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:67038:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140883:22)
       at Request.emit (events.js:314:20)
@@ -31,6 +31,7 @@ npm manifest:
     "dependencies": {
       "@emotion/react": "^11.7.1",
       "@emotion/styled": "^11.6.0",
+      "@mui/icons-material": "^5.3.1",
       "@mui/material": "^5.3.1",
       "@mui/styled-engine-sc": "^5.3.0",
       "next": "^12.0.8",
@@ -337,6 +338,13 @@ Lockfile:
       clsx "^1.1.1"
       prop-types "^15.7.2"
       react-is "^17.0.2"
+  
+  "@mui/icons-material@^5.3.1":
+    version "5.3.1"
+    resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.3.1.tgz#e0e0aecce5a86971dbaa46441d931a9c749a1c53"
+    integrity sha512-8zBWCaE8DHjIGZhGgMod92p6Rm38EhXrS+cZtaV0+jOTMeWh7z+mvswXzb/rVKc0ZYqw6mQYBcn2uEs2yclI9w==
+    dependencies:
+      "@babel/runtime" "^7.16.7"
   
   "@mui/material@^5.3.1":
     version "5.3.1"

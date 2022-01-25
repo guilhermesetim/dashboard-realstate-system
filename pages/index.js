@@ -1,7 +1,7 @@
-import BasicTabs from "./nav-tab";
-import PersistentDrawerLeft from "./nav-aside";
-import StickyHeadTable from './list-house';
-
+import NavTabs from './nav-dash';
+import StickyHeadTable from './data-realstate'
+import StandardImageList from './components/calendar';
+import UnstyledTabsCustomized from './nav-tab2';
 
 
 
@@ -10,9 +10,11 @@ export default function HomePage() {
   
   <>
     
-    {PersistentDrawerLeft()}
-    {/*BasicTabs()*/}
-    {StickyHeadTable()}
+    
+    {/*NavTabs()*/}
+    {UnstyledTabsCustomized(<StandardImageList/>,'segundo conteudo',<StickyHeadTable/>)}
+    
+    
 
     
     
@@ -21,17 +23,3 @@ export default function HomePage() {
   )
 }
 
-
-
-function received(){
-    <>
-      <div>
-        <h3>Recebimento</h3>
-
-      </div>
-      <div>
-        <h3>Taxa de administração</h3>
-
-      </div>
-    </>
-}

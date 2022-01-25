@@ -18,7 +18,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
-import {CollapsibleTable} from './list-house' 
+
 
 const drawerWidth = 240;
 
@@ -94,7 +94,7 @@ export default function PersistentDrawerLeft() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Imobiliária Standard
+            Real State
           </Typography>
 
         </Toolbar>

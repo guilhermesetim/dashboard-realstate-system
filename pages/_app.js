@@ -1,3 +1,5 @@
+import PersistentDrawerLeft from "./components/nav-aside";
+
 function GlobalStyle(){
     return (
       <style global jsx>{`
@@ -26,6 +28,7 @@ export default function MyApp({ Component, pageProps }) {
     return (
     <>
         <GlobalStyle />
+        <PersistentDrawerLeft />
         <Component {...pageProps} />
     </>
     
