@@ -23,7 +23,7 @@ const blue = {
 
 const Tab = styled(TabUnstyled)`
   font-family: IBM Plex Sans, sans-serif;
-  color: white;
+  color: ${blue[700]};
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: bold;
@@ -37,19 +37,19 @@ const Tab = styled(TabUnstyled)`
   justify-content: center;
 
   &:hover {
-    background-color: ${blue[400]};
+    background-color: ${blue[50]};
   }
 
   &:focus {
-    color: #fff;
-    border-radius: 3px;
-    outline: 2px solid ${blue[200]};
+    color: ${blue[800]};
+    border-radius: 5px 5px 0px 0px;
     outline-offset: 2px;
   }
 
   &.${tabUnstyledClasses.selected} {
     background-color: ${blue[50]};
     color: ${blue[600]};
+    border-bottom: 1px solid ${blue[500]};
   }
 
   &.${buttonUnstyledClasses.disabled} {
@@ -66,7 +66,7 @@ const TabPanel = styled(TabPanelUnstyled)`
 
 const TabsList = styled(TabsListUnstyled)`
   min-width: 320px;
-  background-color: ${blue[500]};
+  background-color: transparent;
   border-radius: 8px;
   margin-bottom: 16px;
   display: flex;
@@ -75,7 +75,7 @@ const TabsList = styled(TabsListUnstyled)`
   align-content: space-between;
 `;
 
-export default function UnstyledTabsCustomized(a,b,c) {
+export default function UnstyledTabsCustomized(standard,report,data) {
   return (
     <TabsUnstyled defaultValue={0}>
       <TabsList>
@@ -83,9 +83,9 @@ export default function UnstyledTabsCustomized(a,b,c) {
         <Tab>Relatório</Tab>
         <Tab>Informações</Tab>
       </TabsList>
-      <TabPanel value={0}>{a}</TabPanel>
-      <TabPanel value={1}>{b}</TabPanel>
-      <TabPanel value={2}>{c}</TabPanel>
+      <TabPanel value={0}>{standard}</TabPanel>
+      <TabPanel value={1}>{report}</TabPanel>
+      <TabPanel value={2}>{data}</TabPanel>
     </TabsUnstyled>
   );
 }
