@@ -23,7 +23,7 @@ const blue = {
 
 const Tab = styled(TabUnstyled)`
   font-family: IBM Plex Sans, sans-serif;
-  color: ${blue[700]};
+  color: black;
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: bold;
@@ -37,7 +37,7 @@ const Tab = styled(TabUnstyled)`
   justify-content: center;
 
   &:hover {
-    background-color: ${blue[50]};
+    background-color: ${blue[50]}; 
   }
 
   &:focus {
@@ -66,13 +66,14 @@ const TabPanel = styled(TabPanelUnstyled)`
 
 const TabsList = styled(TabsListUnstyled)`
   min-width: 320px;
-  background-color: transparent;
-  border-radius: 8px;
+  background-color: lightgray;
+  border-radius: 8px 0px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: space-between;
+  border-bottom: 1px solid darkgray;
 `;
 
 export default function UnstyledTabsCustomized(standard,report,data) {

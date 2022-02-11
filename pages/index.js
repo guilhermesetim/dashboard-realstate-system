@@ -1,6 +1,6 @@
 import NavTabs from './nav-dash';
 import StickyHeadTable from './data-realstate'
-import StandardImageList from './components/calendar';
+import Deposits from './components/Recebido';
 import UnstyledTabsCustomized from './nav-tab2';
 
 
@@ -12,7 +12,7 @@ export default function HomePage() {
     
     
     {/*NavTabs()*/}
-    {UnstyledTabsCustomized(<StandardImageList/>,'segundo conteudo',<StickyHeadTable/>)}
+    {UnstyledTabsCustomized(<Deposits/>,'segundo conteudo',<StickyHeadTable/>)}
     
     
 
